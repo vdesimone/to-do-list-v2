@@ -25,10 +25,57 @@ body {
   height: 80%;
   border-radius: 10px;
   padding: 60px;
+  display: flex;
 }
 
 .todo-app h4 {
   color: #5F5F5F;
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 4px;
+}
+
+.heading {
+  flex: 50%;
+}
+
+.nav {
+  display: flex;
+  flex: 50%;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.nav-btns {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.nav-btns:hover {
+  background: #C6C6C6;
+  cursor: pointer;
+}
+
+.fa-solid {
+  font-size: 38px;
+}
+
+@media (max-width: 1200px) {
+  .todo-app {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .todo-app {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .todo-app {
+    width: 90%;
+  }
 }
