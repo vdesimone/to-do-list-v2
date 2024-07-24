@@ -12,16 +12,32 @@
   <body>
     <div class="container">
       <div class="todo-app">
-        <div class="heading">
-          <h1>To-do List</h1>
-          <h4>21, July 2024</h4>
+        <div class="top-container">
+            <div class="heading">
+              <h1>To-do List</h1>
+              <h4>21, July 2024</h4>
+            </div>
+            <div class="nav">
+              <button class="nav-btns" id="add-task"><i class="fa-solid fa-plus"></i></button>
+              <button class="nav-btns" id="light-dark-mode"><i class="fa-solid fa-moon"></i></button>
+              <button class="nav-btns" id="dropdown-menu"><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
         </div>
-        <div class="nav">
-          <button class="nav-btns" id="add-task"><i class="fa-solid fa-plus"></i></button>
-          <button class="nav-btns" id="light-dark-mode"><i class="fa-solid fa-moon"></i></button>
-          <button class="nav-btns" id="dropdown-menu"><i class="fa-solid fa-ellipsis"></i></button>
+        <div class="task-container">
+          <div id="task-1" class="task">
+            <div class="check-btn-container">
+              <button class="check-btn"><i class="fa-solid fa-check" style="display: none;"></i></button>
+            </div>
+            <div class="task-description">
+              <h3>Task 1</h3>
+              <p>description</p>
+            </div>
+            <div class="task-btns-container">
+              <button class="edit-btn"><i class="fa-solid fa-pencil"></i></button>
+              <button class="delete-btn"><i class="fa-solid fa-x"></i></button>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
     <script src="script.js"></script>
   </body>
