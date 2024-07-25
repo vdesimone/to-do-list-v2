@@ -19,7 +19,7 @@
             </div>
             <div class="nav-section">
               <div class="nav">
-                <button class="nav-btns" id="add-task"><i class="fa-solid fa-plus"></i></button>
+                <button onclick="addTask()" class="nav-btns" id="add-task"><i class="fa-solid fa-plus"></i></button>
                 <button class="nav-btns" id="light-dark-mode"><i class="fa-solid fa-moon"></i></button>
                 <button class="nav-btns" id="dropdown-menu"><i class="fa-solid fa-ellipsis"></i></button>
               </div>
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="task-container">
+        <div class="task-container" id="task-container">
           <div id="task-1" class="task">
             <div class="check-btn-container">
               <button class="check-btn"><i class="fa-solid fa-check" style="display: none;"></i></button>
@@ -51,6 +51,7 @@
             </div>
           </div>
         </div>
+
       </div>
       <footer>
         <small>vdesimone 2024</small>
