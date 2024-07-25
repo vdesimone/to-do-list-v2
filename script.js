@@ -18,3 +18,16 @@ function addTask() {
   const parsed = new DOMParser().parseFromString(task, "text/html");
   document.getElementById("task-container").appendChild(parsed.body.lastElementChild);
 }
+
+function checkTask() {
+  const checkBtn = document.getElementById("check-btn");
+  const checkIcon = document.getElementById("check-icon");
+
+  if (checkIcon.style.display == "none") {
+    checkBtn.style.background = "green";
+    checkIcon.style.display = "block";
+  } else if (checkIcon.style.display == "block") {
+    checkBtn.style.background = "white";
+    checkIcon.style.display = "none";
+  }
+}
