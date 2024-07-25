@@ -17,12 +17,25 @@
               <h1>To-do List</h1>
               <h4>21, July 2024</h4>
             </div>
-            <div class="nav">
-              <button class="nav-btns" id="add-task"><i class="fa-solid fa-plus"></i></button>
-              <button class="nav-btns" id="light-dark-mode"><i class="fa-solid fa-moon"></i></button>
-              <button class="nav-btns" id="dropdown-menu"><i class="fa-solid fa-ellipsis"></i></button>
+            <div class="nav-section">
+              <div class="nav">
+                <button class="nav-btns" id="add-task"><i class="fa-solid fa-plus"></i></button>
+                <button class="nav-btns" id="light-dark-mode"><i class="fa-solid fa-moon"></i></button>
+                <button class="nav-btns" id="dropdown-menu"><i class="fa-solid fa-ellipsis"></i></button>
+              </div>
+              <div class="dropdown" style="display: none;">
+                <button id="edit-lists" class="dropdown-btns">
+                  <i class="fa-solid fa-pencil"></i>
+                  Edit lists
+                </button>
+                <button id="view-lists" class="dropdown-btns">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  View lists
+                </button>
+              </div>
             </div>
         </div>
+
         <div class="task-container">
           <div id="task-1" class="task">
             <div class="check-btn-container">
@@ -38,6 +51,7 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
