@@ -19,7 +19,7 @@
             </div>
             <div class="nav-section">
               <div class="nav">
-                <button onclick="addTask()" class="nav-btns" id="add-task"><i class="fa-solid fa-plus"></i></button>
+                <button onclick="addTask()" class="nav-btns" id="add-task" title="Add task"><i class="fa-solid fa-plus"></i></button>
                 <button class="nav-btns" id="light-dark-mode"><i class="fa-solid fa-moon"></i></button>
                 <button class="nav-btns" id="dropdown-menu"><i class="fa-solid fa-ellipsis"></i></button>
               </div>
@@ -36,21 +36,7 @@
             </div>
         </div>
 
-        <div class="task-container" id="task-container">
-          <div id="task-1" class="task">
-            <div class="check-btn-container">
-              <button onclick="checkTask()" class="check-btn" id="check-btn"><i class="fa-solid fa-check" id="check-icon" style="display: none;"></i></button>
-            </div>
-            <div class="task-description">
-              <h3>Task 1</h3>
-              <p>description</p>
-            </div>
-            <div class="task-btns-container">
-              <button class="edit-btn"><i class="fa-solid fa-pencil"></i></button>
-              <button class="delete-btn"><i class="fa-solid fa-x"></i></button>
-            </div>
-          </div>
-        </div>
+        <div class="task-container" id="task-container"></div>
 
       </div>
       <footer>
